@@ -77,6 +77,8 @@ class CoffeeCard extends StatelessWidget {
                 const Positioned(top: 8, left: 8, child: StarRating()),
               ],
             ),
+
+
             // Content Section - No fixed height, let it take only needed space
             Padding(
               padding: const EdgeInsets.all(12),
@@ -86,7 +88,7 @@ class CoffeeCard extends StatelessWidget {
                   Text(coffee.title,
                       style: const TextStyle(
                           fontWeight: FontWeight.w600,
-                          fontSize: 16,
+                          fontSize: 12,
                           color: Color(0xFF2F2D2C))),
                   const SizedBox(height: 4),
                   Text(coffee.subtitle,
