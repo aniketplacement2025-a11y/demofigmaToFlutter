@@ -75,6 +75,27 @@ class CoffeeCard extends StatelessWidget {
                   ),
                 ),
                 const Positioned(top: 8, left: 8, child: StarRating()),
+                // Favorite heart on top-right
+                Positioned(
+                top: 8,
+                right: 8,
+                child: GestureDetector(
+                // onTap: _toggleFavorite,
+                child: Container(
+                padding: const EdgeInsets.all(6),
+                decoration: BoxDecoration(
+                color: Colors.black.withOpacity(0.3),
+                shape: BoxShape.circle,
+                ),
+                child: Icon(
+                //isFavorited ? Icons.favorite : Icons.favorite_border,
+                  false ? Icons.favorite : Icons.favorite_border,
+                //color: isFavorited ? Colors.red : Colors.white,
+                  color: false ? Colors.red : Colors.white,
+                size: 20,
+              ),
+          ),
+        ),)
               ],
             ),
 
